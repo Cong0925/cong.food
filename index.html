@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>美食一览</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+    <img src="背景图x.jpg" class="backImg">
+    <embed class="bgm" src="bgm.mp3" loop="true" autostart="true" volume="10" controls=console>
+
+
+    <header>
+        <div class="title">
+            <p>美食一览</p>
+        </div>
+        <div class="loading"><span id="loading">用户登录</span></div>
+    </header>
+    <!-- 登录 -->
+    <div class="load">
+        <div class="close">X</div>
+        <div class="LoadTitle">
+            <h2>用户登录</h2>
+        </div>
+        <div class="Name">
+            <span class="name">用户名：</span></br>
+            <input type="text" class="nameText" placeholder="用户名" maxlength="10" required="true">
+        </div>
+        <div class="Password">
+            <span class="password">密码：</span></br>
+            <input type="password" class="passwordText" placeholder="密码" maxlength="20" required="true">
+        </div>
+        <div class="Yanzheng">
+            <span class="yanzheng">验证码：</span></br>
+            <input class="text" id="text" type="text" value="" placeholder="请输入验证码（区分大小写）"></br>
+            <canvas class="canvas" id="canvas" onclick="dj()"
+                style="border: 1px solid #ccc;border-radius: 5px;"></canvas></br>
+            <button class="btn" onclick="sublim()">提交</button>
+        </div>
+        <div class="Tijiao">
+            <span class="tijiao" id="tijiao"> 登录</span>
+            <span class="tijiao0" id="tijiao0"> 注册</span>
+        </div>
+    </div>
+    <!-- 注册 -->
+    <div class="zhuce" id="zhuce">
+        <div class="close1">X</div>
+        <div class="closeTitle1">
+            <h2>用户注册</h2>
+        </div>
+        <div class="Name1">
+            <span class="name1">用户名：</span></br>
+            <input type="text1" class="nameText1" id="nameText1" placeholder="用户名(10位以内)" maxlength="10"
+                required="true">
+        </div>
+        <div class="Tishi2" id="Tishi2">
+            <span class="tishi2">用户名为空</span>
+        </div>
+        <div class="Password1">
+            <span class="password1">密码：</span></br>
+            <input type="password1" class="passwordText1" id="pwd1" placeholder="密码(20位以内)" maxlength="20"
+                required="true" name="passwd">
+        </div>
+        <div class="Password2">
+            <span class="password2">确认密码：</span></br>
+            <input type="password2" class="passwordText2" id="pwd2" placeholder="再次确认密码" maxlength="20" required="true"
+                name="passwd">
+        </div>
+        <div class="Tishi1" id="Tishi1">
+            <span class="tishi1">两次密码不一致</span>
+        </div>
+        <div class="Tijiao1">
+            <span class="tijiao1" id="tijiao1"> 注册</span>
+        </div>
+    </div>
+
+
+    <menu>
+        <ul>
+            <li><a href="">待定</a></li>
+            <li><a href="">待定</a></li>
+            <li><a href="">待定</a></li>
+            <li><a href="">待定</a></li>
+            <li><a href="">待定</a></li>
+            <li><a href="">待定</a></li>
+        </ul>
+    </menu>
+
+    <article>
+        <div class="topic1">
+            <p></p>
+            <h1>早餐</h1>
+            <div class="search">
+                <form action="https://www.baidu.com/s" method="get" target="_blank">
+                    <input type="text" class="input1" placeholder="输入内容查询" name="wd"></br>
+                    <input type="submit" value="站外搜索" class="input2">
+                </form>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://www.meishichina.com/mofang/kalijifan/" target="_blank"><img src="咖喱鸡饭.jpg"></a>
+                    <span>***yaun</span>
+                    <h5>咖喱鸡饭</h5>
+                </li>
+                <li>
+                    <a href="https://www.meishichina.com/mofang/tilamisu/" target="_blank"><img src="提拉米苏.jpg"></a>
+                    <span>***yaun</span>
+                    <h5>提拉米苏</h5>
+                </li>
+                <li>
+                    <a href="https://www.meishichina.com/mofang/kaobaozi/" target="_blank"><img src="烤包子.jpg" /></a>
+                    <span>***yaun</span>
+                    <h5>烤包子</h5>
+                </li>
+                <li>
+                    <a href="https://www.meishichina.com/mofang/pisa/" target="_blank"><img src="披萨.jpg" /></a>
+                    <span>***yaun</span>
+                    <h5>芝士披萨</h5>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="maBox" id="maBox">
+            <img src="二维码.jpg" id="erweimaBig" class="erweimaBig">
+        </div>
+
+        <div class="topic2">
+            <p></p>
+            <h1>中餐</h1>
+            <div class="shaoma">
+                <h2>微信公众号<h2>
+                        <hr>
+                        <img src="二维码.jpg" class="erweima" id="erweima">
+            </div>
+            <ul>
+                <li>
+                    <a href="https://www.meishichina.com/mofang/xiaricanzhuobanmian/" target="_blank"><img
+                            src="拌面.jpg"></a>
+                    <span>***yaun</span>
+                    <h5>拌面</h5>
+                </li>
+                <li>
+                    <a href="https://www.meishichina.com/mofang/dongporou/" target="_blank"><img src="东坡肉.jpg"></a>
+                    <span>***yaun</span>
+                    <h5>东坡肉</h5>
+                </li>
+                <li>
+                    <a href="https://www.meishichina.com/mofang/yangrouchuan/" target="_blank"><img src="羊肉串.jpg"></a>
+                    <span>***yaun</span>
+                    <h5>羊肉串</h5>
+                </li>
+                <li>
+                    <a href="https://www.meishichina.com/YuanLiao/LongXia/" target="_blank"><img src="龙虾.jpg"></a>
+                    <span>***yaun</span>
+                    <h5>深海龙虾</h5>
+                </li>
+            </ul>
+        </div>
+
+        <div class="topic3">
+            <p></p>
+            <h1>晚餐</h1>
+            <div class="tishi">
+                <h2>特别提示<h2>
+                        <hr>
+                        <h4><br>以上二维码可以加好友。</h4>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="https://www.meishichina.com/mofang/kelejichi/" target="_blank"><img src="可乐鸡翅.jpg"></a>
+                    <span>***yaun</span>
+                    <h5>可乐鸡翅</h5>
+                </li>
+                <li>
+                    <a href="https://www.meishichina.com/mofang/tangcupaigu/" target="_blank"><img src="糖醋排骨.jpg"></a>
+                    <span>***yaun</span>
+                    <h5>糖醋排骨</h5>
+                </li>
+                <li>
+                    <a href="https://www.meishij.net/china-food/xiaochi/xinjiang/14405.html" target="_blank"><img
+                            src="烤全羊.jpg"></a>
+                    <span>***yaun</span>
+                    <h5>烤全羊</h5>
+                </li>
+                <li>
+                    <a href="https://www.meishichina.com/mofang/dapanji/" target="_blank"><img src="大盘鸡.jpg"></a>
+                    <span>***yaun n </span>
+                    <h5>大盘鸡</h5>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+    <script>
+        // 点击效果
+        // 登录
+        var $load = document.querySelector(".load");
+        document.querySelector("#loading")
+            .addEventListener("click", function () {
+                $load.style.display = "block";
+                draw(show_num);
+            });
+        // 关闭登录
+        document.querySelector(".close")
+            .addEventListener("click", function () {
+                $load.style.display = "none";
+            });
+        // 二维码展示
+        var $maBox = document.querySelector("#maBox");
+        document.querySelector("#erweima")
+            .addEventListener("click", function () {
+                $maBox.style.display = "block";
+            });
+        document.querySelector("#maBox")
+            .addEventListener("click", function () {
+                $maBox.style.display = "none";
+            });
+        // 提交登录
+        document.querySelector("#tijiao")
+            .addEventListener("click", function () {
+                $load.style.display = "none";
+            });
+        // 注册页面
+        var $zhuce = document.querySelector("#zhuce");
+        document.querySelector("#tijiao0")
+            .addEventListener("click", function () {
+                $load.style.display = "none";
+                $zhuce.style.display = "block";
+            });
+
+        // 关闭注册
+        document.querySelector(".close1")
+            .addEventListener("click", function () {
+                $zhuce.style.display = "none";
+                $load.style.display = "block";
+            });
+        // 注册完成
+
+        var $nameText1 = document.querySelector(".nameText1");
+        var $passwordText1 = document.querySelector(".passwordText1");
+        var $passwordText2 = document.querySelector(".passwordText2");
+        var pwd1 = document.querySelector("#pwd1").value;
+        var pwd2 = document.querySelector("#pwd2").value;
+        var $Tishi1 = document.querySelector("#Tishi1");
+        var $Tishi2 = document.querySelector("#Tishi2");
+
+        document.querySelector(".tijiao1")
+            .addEventListener("click", function validate() {
+
+
+                if ($nameText1.value.length == 0) {
+                    $Tishi2.style.display = "block";
+                } else {
+                    if (pwd1 == pwd2) {
+                        $zhuce.style.display = "none";
+                        $load.style.display = "block";
+                    }
+                    else {
+                        $Tishi2.style.display = "none";
+                        $nameText1.value = "";
+                        $passwordText1.value = "";
+                        $passwordText2.value = "";
+                        $Tishi1.style.display = "block";
+                    }
+                }
+            });
+
+    </script>
+    <script>
+        // 验证码
+        var show_num = [];
+        draw(show_num);
+        function dj() {
+            draw(show_num);
+        }
+        function sublim() {
+            var val = document.getElementById("text").value;
+            var num = show_num.join("");
+            if (val == '') {
+                alert('请输入验证码！');
+            } else if (val == num) {
+                alert('提交成功！');
+                document.getElementById(".input-val").val('');
+                draw(show_num);
+
+            } else {
+                alert('验证码错误！\n你输入的是:  ' + val + "\n正确的是:  " + num + '\n请重新输入！');
+                document.getElementById("text").value = '';
+                draw(show_num);
+            }
+
+
+
+        }
+        function draw(show_num) {
+            var canvas = document.getElementById("canvas");//获取到canvas的对象，演员
+            var context = canvas.getContext("2d");//获取到canvas画图的环境，演员表演的舞台
+            canvas.width = 100;
+            canvas.height = 45;
+            var sCode = "A,B,C,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,W,X,Y,Z,1,2,3,4,5,6,7,8,9,0,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m";
+            var aCode = sCode.split(",");
+            var aLength = aCode.length;//获取到数组的长度
+
+            for (var i = 0; i <= 3; i++) {
+                var j = Math.floor(Math.random() * aLength);//获取到随机的索引值
+                var deg = Math.random() * 30 * Math.PI / 180;//产生0~30之间的随机弧度
+                var txt = aCode[j];//得到随机的一个内容
+                show_num[i] = txt;
+                var x = 10 + i * 20;//文字在canvas上的x坐标
+                var y = 20 + Math.random() * 8;//文字在canvas上的y坐标
+                context.font = "bold 23px 微软雅黑";
+
+                context.translate(x, y);
+                context.rotate(deg);
+
+                context.fillStyle = randomColor();
+                context.fillText(txt, 0, 0);
+
+                context.rotate(-deg);
+                context.translate(-x, -y);
+            }
+            for (var i = 0; i <= 5; i++) { //验证码上显示线条
+                context.strokeStyle = randomColor();
+                context.beginPath();
+                context.moveTo(Math.random() * canvas_width, Math.random() * canvas_height);
+                context.lineTo(Math.random() * canvas_width, Math.random() * canvas_height);
+                context.stroke();
+            }
+            for (var i = 0; i <= 30; i++) { //验证码上显示小点
+                context.strokeStyle = randomColor();
+                context.beginPath();
+                var x = Math.random() * canvas_width;
+                var y = Math.random() * canvas_height;
+                context.moveTo(x, y);
+                context.lineTo(x + 1, y + 1);
+                context.stroke();
+            }
+        }
+        function randomColor() {//得到随机的颜色值
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            return "rgb(" + r + "," + g + "," + b + ")";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,620 @@
+@charset "utf-8";	/* CSS Document */
+*{
+	margin:0 auto;
+	padding:0px;
+}
+ 
+.bgm {
+	position: fixed;
+	z-index: 2;
+	width: 100px;
+	height: 40px;
+}
+	/* 登录界面 */
+.loading {
+	padding-top: 20px;
+	font-size: 30px;
+float: right;
+
+font-weight: bold;
+transition: 0.3s;
+}
+.loading:hover,
+.loading:focus {
+    color: rgb(248, 4, 4);
+    text-decoration: none;
+    cursor: pointer;
+}
+.load {
+	display: none;
+	position: fixed;
+	z-index: 1;
+		border: solid;
+		border-color: dodgerblue;
+		border-radius: 10px;
+		position: fixed;
+		top: 30%;
+		left: 50%;
+		margin: -150px 0 0 -150px;
+		width: 300px;
+		height: 500px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: rgb(168 193 216);
+	
+}
+
+
+	.close {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		color: #f1f1f1;
+		font-size: 20px;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+	
+	.close:hover,
+	.close:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.LoadTitle {
+		height: 70px;
+		padding-top: 10px;
+	}
+
+.LoadTitle h2 {
+font-size: 40px;
+text-align: center;
+color: #333;
+}
+
+.Name {
+	padding-top: 10px;
+	height: 70px;
+}
+.name {
+	font-size: 20px;
+}
+.nameText {
+	font-size: 20px;
+	height: 30px;
+	width: 200px;
+	border-radius: 20px;
+	
+}
+
+.Password {
+	padding-top: 10px;
+	height: 70px;
+}
+.password {
+	font-size: 20px;
+}
+.passwordText {
+	font-size: 20px;
+	height: 30px;
+	width: 200px;
+	border-radius: 20px;
+}
+
+
+.Yanzheng {
+	padding-top: 10px;
+	height: 130px;
+}
+.yanzheng {
+	font-size: 20px;
+}
+.text {
+	font-size: 15px;
+	height: 20px;
+	width: 200px;
+	border-radius: 10px;
+margin-bottom: 5px;}
+
+.canvas {
+	background-color: white;
+}
+
+.Tijiao {
+	padding-top: 10px;
+
+}
+
+.tijiao {
+margin-left: 30%;
+	font-size: 30px;
+	transition: 0.3s;
+	border: solid;
+	border-radius: 5px;
+	border-width: 2px;
+}
+
+.tijiao:hover,
+.tijiao:focus {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+.tijiao0 {
+		font-size: 15px;
+		transition: 0.3s;
+		border: solid;
+		border-radius: 5px;
+		border-width: 2px;
+	}
+	
+	.tijiao0:hover,
+	.tijiao0:focus {
+		text-decoration: none;
+		cursor: pointer;
+	}
+/* 注册 */
+.zhuce {
+	display: none;
+	position: fixed;
+	z-index: 2;
+		border: solid;
+		border-color: dodgerblue;
+		border-radius: 10px;
+		position: fixed;
+		top: 30%;
+		left: 50%;
+		margin: -150px 0 0 -150px;
+		width: 300px;
+		height: 500px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: rgb(168 193 216);
+}
+
+
+
+.close1 {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: #f1f1f1;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.LoadTitle1 {
+	height: 70px;
+	padding-top: 10px;
+}
+
+.closeTitle1 h2 {
+font-size: 40px;
+text-align: center;
+color: #333;
+}
+
+.Name1 {
+padding-top: 10px;
+height: 70px;
+}
+.name1 {
+font-size: 20px;
+}
+.nameText1 {
+font-size: 20px;
+height: 30px;
+width: 200px;
+border-radius: 20px;
+
+}
+
+.Password1 {
+padding-top: 10px;
+height: 70px;
+}
+.password1 {
+font-size: 20px;
+}
+.passwordText1 {
+font-size: 20px;
+height: 30px;
+width: 200px;
+border-radius: 20px;
+}
+
+
+
+.Password2 {
+	padding-top: 10px;
+	height: 70px;
+	}
+	.password2 {
+	font-size: 20px;
+	}
+	.passwordText2 {
+	font-size: 20px;
+	height: 30px;
+	width: 200px;
+	border-radius: 20px;
+	}
+
+	.Tishi1 {
+		display: none;
+		padding-top: 10px;
+		height: 50px;
+		}
+	
+	.tishi1 {
+		font-size: 30px;
+		color: #F00;
+	}
+
+
+	
+	.Tishi2 {
+		display: none;
+		padding-top: 10px;
+		height: 50px;
+		}
+	
+	.tishi2 {
+		font-size: 30px;
+		color: #F00;
+	}
+
+
+.Tijiao1 {
+padding-top: 10px;
+
+}
+
+.tijiao1 {
+margin-left: 30%;
+font-size: 30px;
+transition: 0.3s;
+border: solid;
+border-radius: 5px;
+border-width: 2px;
+}
+
+.tijiao1:hover,
+.tijiao1:focus {
+text-decoration: none;
+cursor: pointer;
+}
+
+
+	/* 二维码 */
+	.maBox {
+		display: none;
+	}
+	.erweimaBig {
+		height: 400px;
+		width: 400px;
+padding-left: 30%;
+	}
+
+
+/* 主体 */
+ .backImg {
+            position: fixed;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            opacity: 0.8;
+        }
+body{
+	height:100%;
+	width:100%;
+	font-size:14px;
+	font-family:"微软雅黑";
+	}
+header{
+	width:1200px;
+	height:80px;
+	margin:0 auto;
+	position:relative;
+}
+ 
+header div{
+	float:left;}
+	
+.title{
+	font-family:"华文行楷";
+	font-weight:bold;
+	font-size:68px;
+	text-align:center;
+	letter-spacing:10px;
+	line-height:80px;
+	margin-top:5px;
+	margin-left:30%; 
+	color:#333;
+	}
+
+a{
+	text-decoration:none;
+	color:#06F;}
+	
+a:hover{
+	color:#F00;
+}
+	
+
+ 
+li{
+	list-style:none;
+	}
+/* 待定 */
+menu{
+	background:#d4d8ea;
+	height:70px;
+	width:1200px;
+	}
+	
+menu>ul{
+	height:70px;
+	float:left;
+	margin-left:12%;
+	}
+	
+menu>ul>li{
+	height:35px;
+	width:150px;
+	margin-top:30px;
+	background:#FDEA66;
+	float:left;
+	margin-left:2px;
+	text-align:center;
+	line-height:34px;
+	
+	}
+ 
+menu>ul>li>a{
+	display:inline-blockl;
+	height:40px;
+	width:90px;
+	font-weight:bold;
+	font-size:20px;
+	letter-spacing:1em;
+	color:#333;
+	}
+	
+menu>ul>li>a:hover{
+	color:#F0C;
+}
+	
+	/* Food */
+article{
+	width:100%;
+}
+	
+.topic1{
+	padding-top: 30px;
+	height:300px;
+	width:1200px;
+	background:#d4d8ea;}
+ 
+.search{
+	float:right;
+	margin-right:30px;
+	margin-top:30px;
+	width:230px;
+	height:180px;
+	background:#FDEA66;
+	text-align:center;
+}
+	
+.search form {
+	padding-top: 50px;
+}
+
+.input1 {
+	height: 40px;
+	width: 200px;
+	border-radius: 20px;
+	font-size: 30px;
+}
+.input2 {
+	margin-top: 20px;
+	height: 30px;
+	width: 100px;
+	border-radius: 20px;
+
+}
+
+
+
+ 
+.topic1 p{	
+	height:30px;
+	width:30px;
+	background:url("") no-repeat center;
+	background-size:100% 100%;
+	margin-left:20px;
+	margin-top:10px;
+	display:inline-block;}
+	
+.topic1 h1{
+	font-family:"华文行楷";
+	font-size:38px;
+	color:#06F;
+	display:inline-block;}
+	
+.topic1 a{
+	display:inline-block;}
+	
+.topic1 ul{
+	margin-left:30px;
+	position:absolute;}
+.topic1 ul li{
+	float:left;
+	margin-right:20px;
+	}
+.topic1 ul li img{
+	height:150px;
+	width:200px;}
+	
+.topic1 ul li img:hover{
+	border:5px solid #F00;}
+.topic1 ul li span{
+	display:block;
+	text-align:center;
+	font-family:"华文行楷";
+	font-size:20px;
+	color:#F00;}
+	
+.topic1 ul li h5{
+	text-align:center;
+	font-family:"华文行楷";
+	font-size:22px;
+	color:#6C0;}
+	
+.topic2{
+	height:300px;
+	width:1200px;
+	background:#d4d8ea;}
+	
+.shaoma{
+	float:right;
+	margin-right:30px;
+	margin-top:30px;
+	width:230px;
+	height:260px;
+	background:#FDEA66;
+	font:bold 22px/24px "华文行楷";
+	text-align:center;
+	display:block;}
+	
+.shaoma h2{
+	font-family:"华文行楷";
+	font-size:45px;
+	color:#06F;
+	margin-top:20px;}
+	
+.shaoma img{
+	display:block;
+	float:right;
+	height:180px;
+	width:180px;
+	background-size:100% 100%;
+	margin-top:1px;
+	margin-right:25px;}
+ 
+.topic2 p{	
+	height:30px;
+	width:30px;
+	background:url("") no-repeat center;
+	background-size:100% 100%;
+	margin-left:20px;
+	margin-top:10px;
+	display:inline-block;}
+	
+.topic2 h1{
+	font-family:"华文行楷";
+	font-size:38px;
+	color:#06F;
+	display:inline-block;}
+	
+.topic2 a{
+	display:inline-block;}
+	
+.topic2 ul{
+	margin-left:30px;
+	position:absolute;}
+.topic2 ul li{
+	float:left;
+	margin-right:20px;
+	}
+.topic2 ul li img{
+	height:150px;
+	width:200px;}
+	
+.topic2 ul li img:hover{
+	border:5px solid #F00;}
+.topic2 ul li span{
+	display:block;
+	text-align:center;
+	font-family:"华文行楷";
+	font-size:20px;
+	color:#F00;}
+	
+.topic2 ul li h5{
+	text-align:center;
+	font-family:"华文行楷";
+	font-size:22px;
+	color:#6C0;}
+	
+.topic3{
+	height:300px;
+	width:1200px;
+	background:#d4d8ea;}
+	
+.tishi{
+	float:right;
+	margin-right:30px;
+	margin-top:30px;
+	width:230px;
+	height:160px;
+	background:#FDEA66;
+	font:bold 22px/24px "华文行楷";
+	text-align:center;
+	color:#06F;}
+ 
+.tishi h2{
+	color:#06F;
+	margin-top:20px;}
+	
+.topic3 p{	
+	height:30px;
+	width:30px;
+	background:url("") no-repeat center;
+	background-size:100% 100%;
+	margin-left:20px;
+	margin-top:10px;
+	display:inline-block;}
+	
+.topic3 h1{
+	font-family:"华文行楷";
+	font-size:38px;
+	color:#06F;
+	display:inline-block;}
+	
+.topic3 a{
+	display:inline-block;}
+	
+.topic3 ul{
+	margin-left:30px;
+	position:absolute;}
+.topic3 ul li{
+	float:left;
+	margin-right:20px;
+	}
+.topic3 ul li img{
+	height:150px;
+	width:200px;}
+	
+.topic3 ul li img:hover{
+	border:5px solid #F00;}
+.topic3 ul li span{
+	display:block;
+	text-align:center;
+	font-family:"华文行楷";
+	font-size:20px;
+	color:#F00;}
+	
+.topic3 ul li h5{
+	text-align:center;
+	font-family:"华文行楷";
+	font-size:22px;
+	color:#6C0;}
